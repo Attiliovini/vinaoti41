@@ -1,0 +1,46 @@
+<HTML>
+	<HEAD>
+        <meta charset="UTF-8">
+		<TITLE>
+			Atividade Formulario
+		</TITLE>
+	</HEAD>
+    <FORM METHOD="POST" ACTION="Respostaform.php"> <!--alterado 07/10/2024-->
+        <INPUT TYPE="HIDDEN" NAME="MAILTO" VALUE="envio@conectesites.com.br">
+        <INPUT TYPE="HIDDEN" NAME="SUBJECT" VALUE="Atividade Formulario">
+        <INPUT TYPE="HIDDEN" NAME="PAGETO" VALUE="http://sp.senac.br"><!-- alterado 07/10/2024-->
+            
+            Deixe seu Nome: <INPUT REQUIRED TYPE="TEXT" NAME="Nome" SIZE=60><BR>
+            Deixe seu E-mail: <INPUT REQUIRED TYPE="TEXT" NAME="Email" SIZE=60 MAXLENGTH=50> <BR>
+            Digite sua Assunto: <INPUT REQUIRED TYPE="TEXT" NAME="Assunto" SIZE=10 MAXLENGTH=12><BR>
+            Digite sua senha: <INPUT TYPE="PASSWORD" NAME="Senha" SIZE=10 MAXLENGTH=6><BR>
+            Você gostou do site? <BR>
+            
+                    <INPUT TYPE="RADIO" NAME="GOSTOU" VALUE="SIM" CHECKED> Sim <BR>
+                    <INPUT TYPE="RADIO" NAME="GOSTOU" VALUE="NAO"> Não <BR>
+             
+             
+                    Quais os sites que você mais visita? <BR>
+             
+                    <INPUT TYPE="CHECKBOX" NAME="LINKS" VALUE="CADE" CHECKED> Cadê
+             
+                    <INPUT TYPE="CHECKBOX" NAME="LINKS2" VALUE="YAHOO"> Yahoo
+             
+                    <INPUT TYPE="CHECKBOX" NAME="LINKS3" VALUE="GOOGLE"> Google
+             
+                    <INPUT TYPE="CHECKBOX" NAME="LINKS4" VALUE="ALTAVISTA"> Alta Vista
+                    <BR>
+             
+                    Qual o esporte que você mais gosta?
+                    <SELECT NAME="OPCOES">
+                        <OPTION VALUE="NATACAO"> Natação
+                        <OPTION VALUE="FUTEBOL" SELECTED> Futebol
+                        <OPTION VALUE="BASQUETE"> Basquete
+                    </SELECT>
+             
+                    <BR><BR>
+             
+                Deixe seus comentários:<BR>
+                <TEXTAREA NAME="COMENTARIOS" ROWS=10 COLS=30></TEXTAREA><br>
+
+                <input type="Submit" name="TEXT" name="Enviar"><br> 

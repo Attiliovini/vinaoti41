@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<HTML lang="pt-br">
+ 
+<HEAD>
+    <TITLE>
+        Formulário do site
+    </TITLE>
+    <meta charset="UTF-8">
+</HEAD>
+ 
+<BODY>
+ 
+    <FORM METHOD="POST" ACTION="resposta.php"> <!--alterado 07/10/2024-->
+    <INPUT TYPE="HIDDEN" NAME="MAILTO" VALUE="email@dominioproprio.com.br">
+    <INPUT TYPE="HIDDEN" NAME="SUBJECT" VALUE="Contato do site">
+    <INPUT TYPE="HIDDEN" NAME="PAGETO" VALUE="http://sp.senac.br"><!-- alterado 07/10/2024-->
+ 
+ 
+ 
+        Deixe seu nome: <INPUT TYPE="TEXT" NAME="Nome" SIZE=60><BR>
+        Deixe seu e-mail: <INPUT TYPE="TEXT" NAME="Email" SIZE=60 MAXLENGTH=50> <BR>
+        Digite sua senha: <INPUT TYPE="PASSWORD" NAME="Senha" SIZE=10 MAXLENGTH=6><BR>
+        Você gostou do site? <BR>
+ 
+        <INPUT TYPE="RADIO" NAME="GOSTOU" VALUE="SIM" CHECKED> Sim <BR>
+        <INPUT TYPE="RADIO" NAME="GOSTOU" VALUE="NAO"> Não <BR>
+ 
+ 
+        Quais os sites que você mais visita? <BR>
+ 
+        <INPUT TYPE="CHECKBOX" NAME="LINKS" VALUE="CADE" CHECKED> Cadê
+ 
+        <INPUT TYPE="CHECKBOX" NAME="LINKS2" VALUE="YAHOO"> Yahoo
+ 
+        <INPUT TYPE="CHECKBOX" NAME="LINKS3" VALUE="GOOGLE"> Google
+ 
+        <INPUT TYPE="CHECKBOX" NAME="LINKS4" VALUE="ALTAVISTA"> Alta Vista
+        <BR>
+ 
+        Qual o esporte que você mais gosta?
+        <SELECT NAME="OPCOES">
+            <OPTION VALUE="NATACAO"> Natação
+            <OPTION VALUE="FUTEBOL" SELECTED> Futebol
+            <OPTION VALUE="BASQUETE"> Basquete
+        </SELECT>
+ 
+        <BR><BR>
+ 
+        Deixe seus comentários:<BR>
+        <TEXTAREA NAME="COMENTARIOS" ROWS=5 COLS=30></TEXTAREA>
+ 
+        <BR><BR>
+ 
+        <INPUT TYPE="SUBMIT" VALUE="Enviar">
+        <INPUT TYPE="RESET" VALUE="Limpar">
+ 
+    </FORM>
+ 
+</BODY>
+ 
+</HTML>

@@ -7,7 +7,7 @@
     
 </head>
 <body>
-<form>
+<form method="POST">
     <label>Num1 :</label>
     <input type="number" name="fnum1">
     <br><br>
@@ -21,9 +21,9 @@
 <?php
     //header("content-type: text/html; charset=utf-8");
     // receber as informações do formulario
-    if (isset($_GET['fnum1']) && isset($_GET['fnum2'])) {
-        $n1 = $_GET['fnum1'];
-        $n2 = $_GET['fnum2'];
+    if (isset($_POST['fnum1']) && isset($_POST['fnum2'])) {
+        $n1 = $_POST['fnum1'];
+        $n2 = $_POST['fnum2'];
         $soma = $n1 + $n2;
         if ($soma > 20) {
             echo "Resultado : " . $soma;
