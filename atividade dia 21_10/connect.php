@@ -9,5 +9,5 @@ $banco = mysqli_connect_errno();
 if($banco == true){
     echo "Erro na conexão";
 }else {
-    echo "conexão ok";
+    echo "conexão ok ";
 }

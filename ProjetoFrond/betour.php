@@ -1,33 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>BeTour</title>
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="geral">
-        <div class="topo">
-            <?php
-                include 'topo.php';
-            ?>
+    <div class="entrar-cadastro">
+        <a href="#entrar">Entrar</a>
+        <a href="#cadastrar">Cadastre-se</a>
+    </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="imagens/arraialdocabo.jpg" alt="Imagem de Arraial do Cabo" style="width:100%">
+            <div class="text">Arraial do Cabo</div>
         </div>
-        <div class="menu">
-            <?php
-                include 'menu.php';
-            ?>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="imagens/ilhabela.jpg" alt="Imagem de Ilha Bela" style="width:100%">
+            <div class="text">Ilha Bela</div>
         </div>
-        <div class="conteudo">
-            <?php
-                include 'conteudo_index.php';
-            ?>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="imagens/capitólio.png" alt="Imagem de Capitólio" style="width:100%">
+            <div class="text">Capitólio</div>
         </div>
-        <div class="rodape">
-            <?php
-                include 'rodape.php'
-            ?>
+        <div class="mySlides fade">
+            <div class="numbertext"> 4 / 4</div>
+            <img src="imagens/jalapao.png" alt="Imagem de jalapao" style="width:100%">
+            <div class="text">Jalapão</div>
         </div>
-    </div> <!-- fim da div geral -->
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)" aria-label="Slide anterior">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" aria-label="Próximo slide">&#10095;</a>
+
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }</script>
 </body>
+
 </html>
