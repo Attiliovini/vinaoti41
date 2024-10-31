@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <title>Criando site em PHP </title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="form_cadastro.css">
 </head>
 <body>
     <div id="geral">
@@ -19,7 +19,7 @@
     </div>
     <div id="conteudo">
         <?php
-        include 'conteudo_contato.php';
+        include 'conteudo_form_cadastro.php';
         ?>
     </div>
     <div id="rodape">
@@ -28,6 +28,5 @@
         ?>
     </div>
 </div> <!-- fim da div geral -->
-
 </body>
 </html>

@@ -1,0 +1,29 @@
+body {  
+    margin-top: 0px;
+}
+
+.container {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.titulo {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.button {
+    margin-bottom: 100px;
+}

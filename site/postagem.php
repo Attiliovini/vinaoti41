@@ -19,7 +19,7 @@
     </div>
     <div id="conteudo">
         <?php
-        include 'conteudo_postagens.php';
+        include 'conteudo_postagem.php';
         ?>
     </div>
     <div id="rodape">

@@ -1,5 +1,5 @@
 <div id="conteudo_principal">
-    <h1 class="titulos"> Home </h1>
+    <h1 class="titulos"> SCRIPT </h1>
     <div class="postagens">
         <h1 class="titulos"> </h1>
         <img src="imagens/postagem.jpg" class="imagem"> 

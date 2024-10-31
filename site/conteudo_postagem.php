@@ -1,5 +1,5 @@
 <div id="conteudo_principal">
-    <h1 class="titulos"> Script </h1>
+    <h1 class="titulos"> POSTAGENS </h1>
     <div class="postagens">
         <h1 class="titulos"> </h1>
         <img src="imagens/postagem.jpg" class="imagem"> 
@@ -18,6 +18,6 @@
     <h1 class="titulos">Recentes</h1> 
     <div class="postagens_recentes">
         <h1 class="titulos"><a href="#"> Titulo dos arquivos recentes</a></h1>
-        <span class="data"> 23/10/2024</span> 
+        <span class="data"> 11/03/2018</span> 
     </div>
 </div>
