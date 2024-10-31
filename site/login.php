@@ -12,10 +12,10 @@ $resultado = mysqli_query($link, $sql);
 var_dump($resultado);
 
 if ($resultado == true) {
-    echo "<script> alert('Contato inserido com sucesso!!'); </script>";
+    echo ('<script> alert("Logado com sucesso!!"); window.location.href="http://localhost/vinaoti41/site/index.php"; </script>');
 
 } else {
-    echo "<script> alert('Falha na inserção do contato! '); </script>";
+    echo "<script> alert('ERRO, TENTE NOVAMENTE!!'); </script>";
 }
 
 ?>
