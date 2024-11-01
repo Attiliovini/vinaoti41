@@ -15,6 +15,7 @@
     </div>
     <div class="fundocinza">
         <img class="logo" src="imagens/logo.png">
+        <img class="logo" src="imagens/casa.png">
     </div>
 
     <!-- Slideshow container -->
