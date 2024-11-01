@@ -20,13 +20,13 @@ body {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto;
-  width: 2114px;
+  width: 100%;
   height: 307px;
+ /* margin-top: 145px; */
 }
 
 .slideshow-container img {
-  width: 2114px;
+  width: 100%;
   height: 500px;
 }
 
@@ -120,12 +120,13 @@ body {
   to {opacity: 1}
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px; /* Ajuste a altura conforme necessário */
-  background-color: rgba(128, 128, 128, 0.7); /* Cor cinza com transparência */
-  z-index: 1; /* Certifique-se de que a sobreposição esteja acima da imagem */
+.fundocinza {
+  background-color: #E2E1E1; /* Cor cinza */
+  padding: 10px; /* Espaçamento interno */
+  height: 140px
+}
+.logo {
+      width: 105px;
+      margin-left: 54px;
+    /* height: 105px; */  
 }

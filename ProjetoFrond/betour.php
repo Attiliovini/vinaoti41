@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,9 @@
         <a href="#entrar">Entrar</a>
         <a href="#cadastrar">Cadastre-se</a>
     </div>
-    <div class="overlay"></div>
+    <div class="fundocinza">
+        <img class="logo" src="imagens/logo.png">
+    </div>
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -21,7 +23,7 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 4</div>
-            <img src="imagens/arraialdocabo.jpg" alt="Imagem de Arraial do Cabo" style="width:100%">
+            <img src="imagens/arraialdocabo.jpg" alt="Imagem de Arraial do Cabo">
             <div class="text">Arraial do Cabo</div>
         </div>
 
