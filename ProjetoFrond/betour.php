@@ -14,10 +14,34 @@
         <a href="#cadastrar">Cadastre-se</a>
     </div>
     <div class="fundocinza">
-        <img class="logo" src="imagens/logo.png">
-        <img class="logo" src="imagens/casa.png">
+        <img class="logo" src="imagens/logo.png">   
+        
+        <div class="icon-container">
+            <div class="icon">
+                <img class="logo2" src="imagens/home.png">
+                <a>INICIO</a>
+            </div>
+            <div class="icon">
+                <img class="logo2" src="imagens/empresa.png">
+                <a>EMPRESA</a>
+            </div>
+            <div class="icon">
+                <img class="logo2"src="imagens/viagem.png">
+                <a>PACOTES</a>
+            </div>
+            <div class="icon">
+                <img class="logo2"src="imagens/ilha.png">
+                <a>BATE E VOLTA</a>
+            </div>
+            <div class="icon">
+                <img class="logo2"src="imagens/contato.png">
+                <a>CONTATO</a>
+            </div>      
+            
+        </div>
+           
     </div>
-
+    
     <!-- Slideshow container -->
     <div class="slideshow-container">
 
@@ -36,14 +60,16 @@
  
         <div class="mySlides fade">
             <div class="numbertext">3 / 4</div>
-            <img src="imagens/capitólio.png" alt="Imagem de Capitólio">
-            <div class="text">Capitólio</div>
+            <img src="imagens/campodojordao.jpg" alt="Imagem de Campos do jordao">
+            <div class="text">Campos do Jordão</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext"> 4 / 4</div>
-            <img src="imagens/jalapao.png" alt="Imagem de jalapao">
+            <img src="imagens/jalapao1920x600.jpg" alt="Imagem de jalapao">
             <div class="text">Jalapão</div>
         </div>
+
+
 
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)" aria-label="Slide anterior">&#10094;</a>
@@ -88,6 +114,7 @@
                 slides[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].className += " active";
             }</script>
+          
 </body>
 
 </html>

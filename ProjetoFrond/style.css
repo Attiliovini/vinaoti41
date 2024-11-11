@@ -1,50 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 538px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Ajuste para responsividade */
 }
+
 .entrar-cadastro {
-    background-color: #0B2B40;
-    color: white;
-    padding: 10px;
-    text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #0B2B40;
+  color: white;
+  padding: 10px;
+
 }
+
 .entrar-cadastro a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
 }
-* {box-sizing:border-box}
+
+* {
+  box-sizing: border-box;
+
+}
 
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: 307px;
- /* margin-top: 145px; */
+  height: auto;
+  /* Ajuste para responsividade */
 }
 
 .slideshow-container img {
   width: 100%;
-  height: 500px;
+  height: 332px;
+  /* Ajuste para responsividade */
 }
 
 /* Hide the images by default */
 .mySlides {
   position: relative;
   text-align: center;
-  color: rgb(0, 0, 0); /* Cor do texto */
+  color: rgb(0, 0, 0);
+  /* Cor do texto */
   display: block;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 56%;
+  top: 36%;
   width: auto;
-  margin-top: 68px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -52,7 +63,8 @@ body {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: rgba(0,0,0,0.5); /* Adiciona um fundo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adiciona um fundo semi-transparente */
 }
 
 /* Position the "next button" to the right */
@@ -62,7 +74,8 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:focus, .next:focus {
+.prev:focus,
+.next:focus {
   outline: 2px solid #fff;
 }
 
@@ -75,14 +88,14 @@ body {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  height: 25px;
-  bottom: 10px; /* Distância do fundo */
+  bottom: 10px;
+  /* Distância do fundo */
   left: 50%;
-  transform: translateX(-50%); /* Centraliza o texto */
-  /*background-color: rgba(0, 0, 0, 0.5);  Fundo semi-transparente */
-  padding: 5px; /* Espaçamento interno */
-} 
-
+  transform: translateX(-50%);
+  /* Centraliza o texto */
+  padding: 5px;
+  /* Espaçamento interno */
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -105,8 +118,9 @@ body {
   transition: 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+  background-color: #000000;
 }
 
 /* Fading animation */
@@ -116,17 +130,80 @@ body {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 .fundocinza {
-  background-color: #E2E1E1; /* Cor cinza */
-  padding: 10px; /* Espaçamento interno */
-  height: 140px
+  background-color: #E2E1E1;
+  /* Cor cinza */
+  padding: 10px;
+  /* Espaçamento interno */
+  height: auto;
+  /* Ajuste para responsividade */
 }
+
 .logo {
-      width: 105px;
-      margin-left: 54px;
-    /* height: 105px; */  
+  width: 105px;
+  margin-left: 54px;
+  height: auto;
+}
+
+.logo1 {
+  float: right;
+  margin-top: 20px;
+  margin-right: 300px;
+}
+
+.logo2 {
+  height: 50px;
+  margin-left: 88px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 700px) {
+  .entrar-cadastro {
+    text-align: center;
+  }
+
+  .prev,
+  .next {
+    top: 70%;
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+.icon-container {
+  padding: 20px;
+  display: inline-flex;
+  margin-left: 11px;
+}
+
+.icon {
+  padding: 0;
+  text-align: center;
+  width: 108px;
+  margin-left: 54px;
+  height: auto;
+
+}
+.icon img {
+  float: left;
+  margin-left: 37px;
+  margin-right: 300px;
+}
+.icon a {
+  margin-right: -24px;
+  margin-left: -5px;
+  font-size: xx-small;
+  font-weight: bold;
 }
