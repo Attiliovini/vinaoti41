@@ -67,7 +67,7 @@
             <div class="numbertext"> 4 / 4</div>
             <img src="imagens/jalapao1920x600.jpg" alt="Imagem de jalapao">
             <div class="text">Jalapão</div>
-        </div>
+    </div>
 
 
 
@@ -115,6 +115,16 @@
                 dots[slideIndex - 1].className += " active";
             }</script>
           
+          <div class="cinzabaixo_container">
+            <div class="viagens">
+            <img src="imagens/arraialcabo217x134.png">
+                <a>Pacote Arraial do cabo Ida: 22/11/2024 Volta: 24/11/2024 6x de R$120 A partir de R$ 720 </a>
+                <div class="text1">Arraial do Cabo</div>
+             </div>
+
+        </div>
+
+
 </body>
 
 </html>

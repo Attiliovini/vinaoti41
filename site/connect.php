@@ -1,19 +1,19 @@
-<?php
-    header("Content-Type: text/html; charset=utf-8");
+            <!-- arquivo de conexão  connect.php-->
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "vinicius";
+<?php  header("Content-type: text/html;charset=utf-8");
 
-    $link = mysqli_connect($host, $user, $pass, $db);
-    $connectionError = mysqli_connect_errno();
+	$host = "localhost";
+	$user = "root";
+	$pass = "";
+	$db ="vinicius";
 
-    if ($connectionError == true) {
-        echo "Erro na conexão";
-    
-    } else {
-        echo "Conexão OK";
-    }
+	$link = mysqli_connect($host,$user,$pass,$db);
+	$banco = mysqli_connect_errno();
 
-?>
+	if($banco == true){
+		echo "Erro na conexão";
+	}
+	else{
+	//	echo "conexão ok";
+	}
+ ?>
