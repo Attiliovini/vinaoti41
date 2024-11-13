@@ -29,10 +29,10 @@
 			$html = "<table border=1><tr><td>Nome</td><td>Email</td><td>Foto</td><td>Açoes</td></tr>";
 			foreach ($resultado as $valor) { /* Fazendo o loop para verificar o resultado*/
 
-				$html .= "<tr><td>" . $valor['nome'] . "</td><td>" . $valor['email'] . "</td><td>" . $valor['foto'] . "</td><td><a href='http://localhost/vinaoti41/site/cadastros.php" . $valor['id'] . "'>Editar</a> /<span onclick='deletar(".$valor['id'].")'>Deletar</span></td><tr>";
+				$html .= "<tr><td>" . $valor['nome'] . "</td><td>" . $valor['email'] . "</td><td>" . $valor['foto'] . "</td><td><a href='http://localhost/vinaoti41/site/form_cadastro.php?id=" . $valor['id'] . "'>Editar</a> /<span onclick='deletar(".$valor['id'].")'>Deletar</span></td><tr>";
 				/* var_dump($valor);*/
 			}
-			$html .= "/table";
+			$html .= "</table>";
 			echo $html;
 
 			?>

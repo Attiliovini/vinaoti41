@@ -43,9 +43,13 @@
     </div>
     
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div class="imagem-container">
+        <div class="imagemfixa">
+            <p>teste</p>
+        </div>
+    </div>
 
-        <!-- Full-width images with number and caption text -->
+        <!-- Full-width images with number and caption text 
         <div class="mySlides fade">
             <div class="numbertext">1 / 4</div>
             <img src="imagens/arraialdocabo.jpg" alt="Imagem de Arraial do Cabo">
@@ -67,23 +71,23 @@
             <div class="numbertext"> 4 / 4</div>
             <img src="imagens/jalapao1920x600.jpg" alt="Imagem de jalapao">
             <div class="text">Jalapão</div>
+    
+
     </div>
-
-
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)" aria-label="Slide anterior">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)" aria-label="Próximo slide">&#10095;</a>
-
-        <br>
-
-        <!-- BOLINHA DE SLIDE -->
-        <div style="text-align:center">
+        <div style="text-align:center">   BOLINHA DE SLIDE
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
+
+
+        Next and previous buttons 
+        <a class="prev" onclick="plusSlides(-1)" aria-label="Slide anterior">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" aria-label="Próximo slide">&#10095;</a>
+
+        <br>  
+          
 
         <script>
             let slideIndex = 1;
@@ -114,7 +118,7 @@
                 slides[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].className += " active";
             }</script>
-          
+          -->
           <div class="cinzabaixo_container">
             <div class="viagens">
             <img src="imagens/arraialcabo217x134.png">
