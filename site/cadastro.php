@@ -16,6 +16,7 @@
   include "connect.php";
 
 // arquivo de cadastro
+	$id          =  $_POST['id'];
 	$nome 		 = 	$_POST['nome'];
 	$email 		 = 	$_POST['email'];
 	$senha	   	 = 	$_POST['senha'];
@@ -24,7 +25,7 @@
 	$foto		 =  $_FILES['foto']['name'];
 	$tipo 		 =  $_FILES['foto']['type'];
 
-	var_dump($_FILES);
+	
 
 
 	$target_dir = "uploads/";
@@ -54,43 +55,17 @@ if ($uploadOk == 0) {
 	  echo "Sorry, there was an error uploading your file.";
 	}
   }
-
-/*
-		echo "Nome 				 : $nome<br>";
-		echo "Email 			 : $email<br> ";
-		echo "Senha 			 : $senha<br> ";
-		echo "Repetição de senha : $repetesenha<br> ";
-		echo "Lembrete  		 : $lembrete<br> ";
-		echo "Tipo      		 : $tipo";
-*/
- 			// variaveis diferentes de vazio ?
-/*		$registro == false;
-		if ($nome != "" && $email !="" && $senha!="" && $lembrete !="" && $foto!="") {
-			
-			if ($senha != $repetesenha) {
-
-				echo "<script> alert(' Senhas diferentes '); window.history.go(-1);</script>";
-				}
-			
-				else{
-					 $registro == true;
-					}
-
-						}else{
-
-							echo "<script> alert(' É necessario preencher todos os campos'); window.history.go(-1);</script>";
-								}
-
-// 
-
-	$sql  =  mysqli_query($link, "SELECT * FROM tb_user order by id_user desc limit 3" );									
-       
-        while($line = mysqli_fetch_array($sql)){
-        	$id = $line['id_user'];
-        	$nome_user = $line['nome'];
-        }
-
-         echo "$id<br>";
-         echo "$nome_user";
-*/
+		
+  	// vaamos inserir ou atualizar os cadastros
+	if($id > 0 ){
+		// atualiza o cadastro
+		$sql="UPDATE `cadastro` SET `nome`='".$nome."',`email`='".$email."',`senha`='".$senha."',`lembrete`='".$lembrete."'WHERE id=".$id;
+		$resultado = mysqli_query($link,$sql);
+		var_dump($resultado);
+	}else{
+		// adciona um novo cadastro 
+		$sql="INSERT INTO `cadastro`( `nome`, `email`, `senha`, `lembrete`, `foto`) VALUES (,'".$nome."','".$email."','".$senha."','','".$lembrete."','".$foto."')";
+		$resultado = mysqli_query($link,$sql);
+		var_dump($resultado);
+	}
 ?>

@@ -42,90 +42,27 @@
            
     </div>
     
-    <!-- Slideshow container -->
+    <!-- imagem fixa com promocao-->
     <div class="imagem-container">
         <div class="imagemfixa">
-            <p>teste</p>
-        </div>
-    </div>
+            <div class="promo"><p>BLACK FRIDAY PACOTES 50% OFF</p></div>    
+        </div>        
+    </div> 
 
-        <!-- Full-width images with number and caption text 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
-            <img src="imagens/arraialdocabo.jpg" alt="Imagem de Arraial do Cabo">
-            <div class="text">Arraial do Cabo</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
-            <img src="imagens/ilhabela.jpg" alt="Imagem de Ilha Bela">
-            <div class="text">Ilha Bela</div>
-        </div>
- 
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
-            <img src="imagens/campodojordao.jpg" alt="Imagem de Campos do jordao">
-            <div class="text">Campos do Jordão</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext"> 4 / 4</div>
-            <img src="imagens/jalapao1920x600.jpg" alt="Imagem de jalapao">
-            <div class="text">Jalapão</div>
-    
-
-    </div>
-        <div style="text-align:center">   BOLINHA DE SLIDE
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-
-
-        Next and previous buttons 
-        <a class="prev" onclick="plusSlides(-1)" aria-label="Slide anterior">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)" aria-label="Próximo slide">&#10095;</a>
-
-        <br>  
-          
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }</script>
-          -->
           <div class="cinzabaixo_container">
             <div class="viagens">
-            <img src="imagens/arraialcabo217x134.png">
-                <a>Pacote Arraial do cabo Ida: 22/11/2024 Volta: 24/11/2024 6x de R$120 A partir de R$ 720 </a>
+            <img src="imagens/arraialcabo217x134.png">  
+            <img src="imagens/ilhabela217X128.png">
+            <img src="imagens/capitolio217x134.png">
+            <img src="imagens/jalapao217x134.png">
+            </div>
+            <div class="info_1">
+                <a>Pacote<BR> Arraial do cabo<br> Ida: 22/11/2024 <BR> Volta: 24/11/2024 <BR> 6x de R$120 <BR> A partir de R$ 720 </a>
                 <div class="text1">Arraial do Cabo</div>
-             </div>
-
+            </div>
+            <div class="info_1">
+                
+            </div>
         </div>
 
 
