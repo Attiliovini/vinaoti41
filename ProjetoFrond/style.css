@@ -67,7 +67,22 @@ body {
     font-weight: bold;
     width: 200px;
 }
-
+.info_1 h2{
+  font-size: 20px;
+}
+.info_1 h3{
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+.info_1 p{
+  font-size: 15px;
+}
 
 
 
@@ -161,8 +176,10 @@ body {
 }
 .cinzabaixo_container {
   background-color: #E2E1E1;  /* Cor cinza */
-  padding: 95px;  /* Espaçamento interno */
+  padding: 40px 295px;/* Espaçamento interno */
   height: auto;  /* Ajuste para responsividade */
+  display: flex;
+  justify-content: space-between;
 }
 .cinzabaixo_container img {
   height: auto;  /* Ajuste para responsividade */
