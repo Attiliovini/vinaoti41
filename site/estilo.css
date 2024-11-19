@@ -167,8 +167,13 @@
 		margin: 10px 2%;
 
 	}
+        
+        .deletar {
+          cursor: pointer;
+          color: blue;
+        }
 /*-----------------------FIM DO CONTEUDO----------------------------*/
-
+       
 
 
 

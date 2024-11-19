@@ -5,7 +5,7 @@
 	$host = "localhost";
 	$user = "root";
 	$pass = "";
-	$db ="vinicius";
+	$db ="israel2";
 
 	$link = mysqli_connect($host,$user,$pass,$db);
 	$banco = mysqli_connect_errno();
@@ -14,6 +14,6 @@
 		echo "Erro na conexão";
 	}
 	else{
-	//	echo "conexão ok";
+//		echo "conexão ok";
 	}
  ?>

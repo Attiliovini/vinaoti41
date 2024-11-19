@@ -4,11 +4,6 @@
 	<meta charset="utf-8">
 	<title></title>
 </head>
-<body>
-
-
-</body>
-</html>
 <?php
 
 
@@ -16,7 +11,7 @@
   include "connect.php";
 
 // arquivo de cadastro
-	$id          =  $_POST['id'];
+    $id          =  $_POST['id']; /* Alterado em 13/11/2024 */
 	$nome 		 = 	$_POST['nome'];
 	$email 		 = 	$_POST['email'];
 	$senha	   	 = 	$_POST['senha'];
@@ -25,9 +20,17 @@
 	$foto		 =  $_FILES['foto']['name'];
 	$tipo 		 =  $_FILES['foto']['type'];
 
-	
+//Deletar registro
+if ($_GET['acao'] == 'deletar') {
+	$id          =  $_GET['id'];
+	$sql = "DELETE FROM `cadastros` WHERE id=".$id;
+	$resultado = mysqli_query($link,$sql);
+	echo "ok";
+}	else {
 
+//	var_dump($_FILES);
 
+//Processo de enviar a imagem /* Alterado em 13/11/2024 */
 	$target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["foto"]["name"]);
 $uploadOk = 1;
@@ -55,17 +58,26 @@ if ($uploadOk == 0) {
 	  echo "Sorry, there was an error uploading your file.";
 	}
   }
-		
-  	// vaamos inserir ou atualizar os cadastros
-	if($id > 0 ){
-		// atualiza o cadastro
-		$sql="UPDATE `cadastro` SET `nome`='".$nome."',`email`='".$email."',`senha`='".$senha."',`lembrete`='".$lembrete."'WHERE id=".$id;
-		$resultado = mysqli_query($link,$sql);
-		var_dump($resultado);
-	}else{
-		// adciona um novo cadastro 
-		$sql="INSERT INTO `cadastro`( `nome`, `email`, `senha`, `lembrete`, `foto`) VALUES (,'".$nome."','".$email."','".$senha."','','".$lembrete."','".$foto."')";
-		$resultado = mysqli_query($link,$sql);
-		var_dump($resultado);
-	}
+
+///// Vamos inserir ou atualizar os cadastros
+ if($id > 0) {
+//Atualiza o cadastro
+$sql = "UPDATE `cadastros` SET `nome`='".$nome."',`email`='".$email."',`senha`='".$senha."',`lembrete`='".$lembrete."' WHERE id=".$id;
+$resultado = mysqli_query($link,$sql);
+echo ('<script> alert("Cadastro atualizado com sucesso!!!");</script>');
+echo '<META HTTP-EQUIV=REFRESH CONTENT="1; http://localhost/israel/site/form_login.php">'; /* redirecionar para tela de login */
+
+ } else {
+//Adiciona um novo cadastro
+$sql = "INSERT INTO `cadastros`(`nome`, `email`, `senha`, `lembrete`, `foto`) VALUES ('".$nome."','".$email."','".$senha."','".$lembrete."','".$foto."')";
+
+$resultado = mysqli_query($link,$sql);
+echo ('<script> alert("Cadastro Inserido com sucesso!!!");</script>');
+echo '<META HTTP-EQUIV=REFRESH CONTENT="1; http://localhost/israel/site/form_login.php">'; /* redirecionar para tela de login */ 
+
+}
+
+
+}
+
 ?>

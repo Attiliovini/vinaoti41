@@ -10,36 +10,10 @@
 
 <body>
     <div class="entrar-cadastro">
-        <a href="#entrar">Entrar</a>
-        <a href="#cadastrar">Cadastre-se</a>
-    </div>
-    <div class="fundocinza">
-        <img class="logo" src="imagens/logo.png">   
-        
-        <div class="icon-container">
-            <div class="icon">
-                <img class="logo2" src="imagens/home.png">
-                <a>INICIO</a>
-            </div>
-            <div class="icon">
-                <img class="logo2" src="imagens/empresa.png">
-                <a>EMPRESA</a>
-            </div>
-            <div class="icon">
-                <img class="logo2"src="imagens/viagem.png">
-                <a>PACOTES</a>
-            </div>
-            <div class="icon">
-                <img class="logo2"src="imagens/ilha.png">
-                <a>BATE E VOLTA</a>
-            </div>
-            <div class="icon">
-                <img class="logo2"src="imagens/contato.png">
-                <a>CONTATO</a>
-            </div>      
-            
-        </div>
-           
+        <?php
+            include "topo.php";
+        ?>
+
     </div>
     
     <!-- imagem fixa com promocao-->
@@ -76,6 +50,11 @@
             </div>
         </div>
 
+        <footer>
+            <?php
+                include "rodape.php";
+            ?>
+        </footer>
 
 </body>
 
