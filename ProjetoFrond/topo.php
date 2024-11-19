@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="icon">
-            <a href="#"><img class="logo2" src="imagens/viagem.png"></a>
+            <a href="pacotes.php"><img class="logo2" src="imagens/viagem.png"></a>
             <div>
                 <a>PACOTES</a>
             </div>

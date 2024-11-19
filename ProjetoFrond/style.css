@@ -216,7 +216,7 @@ height: 70px;
 float: left;
 background-color:#0B2B40;
 color: white;
-/*margin-top: 165px;*/
+margin-top: 255px;
 }
 
 .direitos{
@@ -242,6 +242,9 @@ color: white;
 }
 .titulos a:hover{
  color:#59F;
+}
+.titulo{
+  margin-left: 830px;
 }
 .campos,.campos_cad,#botoes,.botoes{
 
@@ -274,4 +277,30 @@ color: white;
 }
 form{
   padding-left: 150px;
+}
+.pacotes{
+  font-size: 15px;
+  font-weight: bold;
+  width: 217px;
+  margin-left: 70px;
+}
+.pacotes h2{
+font-size: 20px;
+}
+.pacotes h3{
+display: block;
+font-size: 1.17em;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+unicode-bidi: isolate;
+}
+.pacotes p{
+font-size: 15px;
+}
+.pacote_container{
+  display: flex;
+  margin-left: 330px;
 }
