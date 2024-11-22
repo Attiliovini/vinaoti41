@@ -1,1 +1,1 @@
-<p class="direitos"> BeTour Cnpj: 33.120.376/0001-10 Alameda Madeira, 44 - Alphaville Industrial, Barueri - SP, 06454-010 © 2024 BeTour. Todos os direitos reservados </p>
+<p class="direitos"> BeTour Cnpj: 33.120.376/0001-10 <BR> Alameda Madeira, 44 - Alphaville Industrial, Barueri - SP, 06454-010 <BR> © 2024 BeTour. Todos os direitos reservados </p>

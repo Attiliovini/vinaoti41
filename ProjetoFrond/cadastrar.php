@@ -36,7 +36,7 @@
         </div>
     </div>
 
-        <footer>
+        <footer class="remocao_margin">
             <?php
             include "rodape.php";
             ?>

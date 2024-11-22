@@ -1,4 +1,4 @@
-<a href="#entrar">Entrar</a>
+<a href="/vinaoti41/ProjetoFrond/entrar.php">Entrar</a>
 <a href="/vinaoti41/ProjetoFrond/cadastrar.php">Cadastre-se</a>
 </div>
 <div class="fundocinza">
