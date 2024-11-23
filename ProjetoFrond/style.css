@@ -323,3 +323,36 @@ font-size: 15px;
   .remocao_margin {
     margin-top : 0;
   }
+
+   .empresa_container{
+    height: 388px;
+    margin-top: 23px;
+    margin-left: 70px;
+    width: 1814px;
+  }
+  .backgroud{
+    background-image: url(imagens/backgroud.jpg);
+    height: 622px;
+    width: 90%;
+    background-repeat: no-repeat;
+    margin-left: 78px;
+    margin-top: 16px;
+    opacity: 45%;
+  }
+  .backgroud h1 {
+      display: block;
+      font-size: 1.17em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      font-size: 23px;
+  }
+  .backgroud h2{
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .backgroud p{
+    font-size: 10px;
+  }

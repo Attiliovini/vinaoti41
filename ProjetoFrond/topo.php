@@ -12,9 +12,9 @@
             </div>
         </div>
         <div class="icon">
-            <a href="#"><img class="logo2" src="imagens/empresa.png"></a>
+            <a href="empresa.php"><img class="logo2" src="imagens/empresa.png"></a>
             <div>
-                <a>EMPRESA</a>
+                <a href="empresa.php">EMPRESA</a>
             </div>
         </div>
         <div class="icon">
