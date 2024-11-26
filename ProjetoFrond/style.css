@@ -150,11 +150,11 @@ body {
 }
 
 .icon-container {
-  padding: 20px 350px;
+  padding: 20px 115px;
   display: flex;
   justify-content: space-between;  
   align-items: center;
-  
+  margin-left: 275px;
 }
 
 .icon {
@@ -215,8 +215,10 @@ height: 156px;
 float: left;
 background-color:#0B2B40;
 color: white;
-margin-top: 254px;
+margin-top: 28px;
+
 }
+
 
 .direitos{
    color: #fff;
@@ -247,7 +249,7 @@ margin-top: 254px;
  color:#59F;
 }
 .titulo{
-  margin-left: 830px;
+  margin-left: 815px;
 }
 .campos,.campos_cad,#botoes,.botoes{
   width: 50%;
@@ -291,6 +293,12 @@ form{
   width: 217px;
   margin-left: 70px;
 }
+.pacotecinza{
+  background-color: #E2E1E1;
+  width: 1903px;
+  height: 525px;
+
+}
 .pacotes h2{
 font-size: 20px;
 }
@@ -309,8 +317,8 @@ font-size: 15px;
 }
 .pacote_container{
   display: flex;
-  margin-left: 330px;
-  height: 50vh;
+  height: 50px;
+  margin-left: 351px;
 }
 .cinzaentrar{
   background-color: #E2E1E1;
@@ -324,35 +332,98 @@ font-size: 15px;
     margin-top : 0;
   }
 
-   .empresa_container{
-    height: 388px;
+  .empresa_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre a imagem e o texto */
     margin-top: 23px;
     margin-left: 70px;
-    width: 1814px;
-  }
-  .backgroud{
-    background-image: url(imagens/backgroud.jpg);
-    height: 622px;
-    width: 90%;
+    background-color: #E2E1E1; /* Fundo de fallback */
+    width: 1770px;
+}
+
+/* Estilo da imagem de fundo à esquerda */
+.backgroud {
+    background-position: left center; /* Imagem alinhada à esquerda */
     background-repeat: no-repeat;
-    margin-left: 78px;
-    margin-top: 16px;
-    opacity: 45%;
-  }
-  .backgroud h1 {
-      display: block;
-      font-size: 1.17em;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      font-weight: bold;
-      font-size: 23px;
-  }
-  .backgroud h2{
+    background-size: cover; /* Ajusta a imagem para cobrir o espaço */
+    width: 50%; /* Ocupa metade do espaço disponível */
+    height: 100%; /* A altura será 100% do container */
+}
+
+/* Estilo para o texto à direita */
+.fundoempresa {
+    width: 100%; /* O texto ocupa 45% da largura do container */
+    padding: 20px; /* Adiciona um pouco de espaçamento ao redor do texto */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+/* Estilo dos títulos e parágrafos dentro da seção*/ 
+.backgroud h1, .backgroud h2, .backgroud p {
+    margin: 10px 0; /* Espaçamento entre os elementos */
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px;
+}
+
+/* Estilo do título principal */
+.backgroud h1 {
+    font-size: 20px;
     font-weight: bold;
-    font-size: 10px;
-  }
-  .backgroud p{
-    font-size: 10px;
-  }
+    width: 1705px;
+    text-align: center;
+}
+
+/* Estilo para subtítulos (h2) */
+.backgroud h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 1705px;
+    text-align: center;
+}
+
+/* Estilo para parágrafos */
+.backgroud p {
+    font-size: 20px;
+    line-height: 1.6em;
+    width: 1705px;
+    text-align: center;
+}
+.image_container{
+  margin-left: 10px;
+}
+
+.imagem {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px
+}
+
+.imagem img {
+  width: 93%; /* A imagem ocupa toda a largura do container da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Ajuste no footer */
+.remocao_margin_empresa {
+  margin-top: 20px;
+}
+/* Contato */
+.logocontato {
+    float: left;
+    margin: auto;
+    width: 304px;
+    margin-left: 129px;
+}
+.ajustecontato {
+  margin-left: 802px;
+}
+.contatocinza{
+  background-color: #E2E1E1;
+  height: 733px;
+  width: 1800px;
+  margin-left: 45px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}

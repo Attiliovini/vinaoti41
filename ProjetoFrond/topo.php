@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="icon">
-            <a href="#"><img class="logo2" src="imagens/contato.png"></a>
+            <a href="contato.php"><img class="logo2" src="imagens/contato.png"></a>
             <div>
                 <a>CONTATO</a>
             </div>

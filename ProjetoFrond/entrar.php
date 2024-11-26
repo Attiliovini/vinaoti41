@@ -30,7 +30,13 @@
             </form>
 
 
-            <footer>
+            <footer style="position: relative;
+                            width: 100%;
+                            height: 156px;
+                            float: left;
+                            background-color: #0B2B40;
+                            color: white;
+                            margin-top: 275px;">
                 <?php
                 include "rodape.php";
                 ?>
