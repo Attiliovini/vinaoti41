@@ -20,27 +20,28 @@
 
         <div id="box_form">
             <h1 class="titulos" style="font-size: 40px">Cadastra-Se</h1>
-            <form action="cadastrar.php" method="POST" enctype="multipart/form-data">
+            <form action="cadastrarAction.php" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="id">
                 <p>Nome:<input type="text" name="nome" class="campos_cad" placeholder="NOME"></p>
                 <p>CPF:<input type="text" name="cpf" class="campos_cad" placeholder="CPF"></p>
                 <p>Senha:<input type="password" name="senha" class="campos_cad" placeholder="SENHA"></p>
-                <p>Data de Nascimento:<input type="text" name="data de nascimento" class="campos_cad"
-                        placeholder="DATA DE NASCIMENTO"></p>
+                <p>Data de Nascimento:<input type="text" name="datadenascimento" class="campos_cad"placeholder="DATA DE NASCIMENTO"></p>
+                        
                 <!-- formatação dos botoes -->
                 <div id="botoes">
                     <!-- Trazer o botão atualizar qdo o id for maior que 0-->
-                    <input type="submit" value="CONLUIR" class="bt_cad">
+                    <input type="submit" value="Concluir" class="bt_cad">
                 </div>
 
         </div>
     </div>
+    
 
-        <footer class="remocao_margin">
-            <?php
-            include "rodape.php";
-            ?>
-        </footer>
+    <footer class="remocao_margin">
+        <?php
+        include "rodape.php";
+        ?>
+    </footer>
 
 </body>
 

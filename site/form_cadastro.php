@@ -26,7 +26,7 @@
 	//	echo $id;
 		if ($id > 0) {
 			/*Consultar o usuario com esse ID e trazer as informações */
-			$sql = "SELECT `id`, `nome`, `email`, `senha`, `lembrete`, `foto` FROM `cadastros` WHERE id=".$id;
+			$sql = "SELECT `id`, `nome`, `email`, `senha`, `lembrete`, `foto` FROM `usuario` WHERE id=".$id;
 	//		echo $sql;
 
 			$resultado = mysqli_query($link,$sql);

@@ -6,10 +6,10 @@ $CPF = $_POST['cpf'];
 $senha = $_POST['senha'];
 
  // chmando a conexão com o banco 
- include_once("connect.php");
+ include_once("conexao.php");
 
  //Select de pesquisa do usuário
- $sql = "SELECT `id`, `nome`, `email`, `senha`, `lembrete`, `foto` FROM `cadastros` WHERE `email` = '".$email."' AND `senha` = '".$senha."'";
+ $sql = "SELECT `nome`, `cpf`, `senha`, `datadenascimento` FROM `cadastros` WHERE  `CPF` = '".$CPF."' AND `senha` = '".$senha."'";
 
  //Executando a select
  $resultado = mysqli_query($link,$sql);
@@ -27,23 +27,23 @@ $senha = $_POST['senha'];
  //Se tiver resultado o valor de ID vai ser maior que 0
  if ($id > 0) {
    $_SESSION['nome'] = $valor['nome']; /*Alterado em 04/11/2024 */ 
-   $_SESSION['email'] = $valor['email']; /*Alterado em 04/11/2024 */ 
-   $_SESSION['id'] = $valor['id']; /*Alterado em 04/11/2024 */ 
+   $_SESSION['cpf'] = $valor['cpf']; /*Alterado em 04/11/2024 */ 
+  $_SESSION['id'] = $valor['id'];/* Alterado em 04/11/2024 */ 
     ?>
     <script>
     alert("usuário conectado com sucesso!");
-    window.location.replace("betour.php");
+    window.location.replace("betour.php");  
     </script>
 <?php
  } else {
-   unset ($_SESSION['login']); /*Alterado em 04/11/2024 */ 
+   unset ($_SESSION['cpf']); /*Alterado em 04/11/2024 */ 
   unset ($_SESSION['senha']); /*Alterado em 04/11/2024 */ 
     ?>
     <script>
     alert("usuário ou senha incorretas!");
-    window.location.replace("form_login.php");
+    window.location.replace("entrar.php");
     </script>
     <?php
  }
 
-?>  
+?>

@@ -20,8 +20,8 @@
 
         <div id="box_form">
             <form action="login_acao.php" method="POST" enctype="multipart/form-data">
-                <p>Email: <input type="email" name="email" class="campos_cad" placeholder="email"></p>
-                <p>Senha: <input type="password" name="senha" class="campos_cad" placeholder="senha"></p>
+                <p>CPF: <input type="cpf" name="cpf" class="campos_cad" placeholder="CPF"></p>
+                <p>Senha: <input type="password" name="senha" class="campos_cad" placeholder="SENHA"></p>
                 <!-- formatação dos botoes -->
                 <div id="botoes">
                     <input type="submit" value="LOGAR" class="bt_cad">

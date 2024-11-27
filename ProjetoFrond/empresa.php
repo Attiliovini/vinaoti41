@@ -47,7 +47,6 @@
             <div class="image_container">
                 <div class="imagem">
                     <img src="imagens/backgroud.jpg" alt="Imagem de fundo">
-                    <img src="imagens/atrasempresa.jpg">
                 </div>
             </div>
         </div>

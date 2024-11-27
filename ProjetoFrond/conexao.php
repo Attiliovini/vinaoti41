@@ -1,5 +1,3 @@
-            <!-- arquivo de conexão  connect.php-->
-
 <?php  header("Content-type: text/html;charset=utf-8");
 
 	$host = "localhost";
@@ -14,6 +12,6 @@
 		echo "Erro na conexão";
 	}
 	else{
-				echo "conexão ok";
+		//		echo "conexão ok";
 	}
  ?>

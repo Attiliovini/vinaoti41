@@ -207,6 +207,7 @@ body {
   height: 134px;
   display: flex;
   justify-content: space-evenly;
+  border-radius: 6%;
 }
 footer{
 position: relative;
@@ -285,7 +286,7 @@ margin-top: 28px;
 form{
   padding-left: 150px;
   margin-left: 462px;
-  margin-top: 45px;
+  margin-top: 66px;
 }
 .pacotes{
   font-size: 15px;
@@ -326,6 +327,7 @@ font-size: 15px;
   }
   .logoentrar{
     margin-left: 912px;
+    margin-top: 35px;
   }
 
   .remocao_margin {
@@ -344,11 +346,11 @@ font-size: 15px;
 
 /* Estilo da imagem de fundo à esquerda */
 .backgroud {
-    background-position: left center; /* Imagem alinhada à esquerda */
-    background-repeat: no-repeat;
-    background-size: cover; /* Ajusta a imagem para cobrir o espaço */
-    width: 50%; /* Ocupa metade do espaço disponível */
-    height: 100%; /* A altura será 100% do container */
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* Estilo para o texto à direita */
@@ -403,6 +405,8 @@ font-size: 15px;
 .imagem img {
   width: 93%; /* A imagem ocupa toda a largura do container da imagem */
   height: auto; /* Mantém a proporção da imagem */
+  margin-left: 360px;
+  border-radius: 2%;
 }
 
 /* Ajuste no footer */
@@ -418,6 +422,7 @@ font-size: 15px;
 }
 .ajustecontato {
   margin-left: 802px;
+  padding: 18px;
 }
 .contatocinza{
   background-color: #E2E1E1;
