@@ -24,10 +24,15 @@
                 <p>Senha: <input type="password" name="senha" class="campos_cad" placeholder="SENHA"></p>
                 <!-- formatação dos botoes -->
                 <div id="botoes">
-                    <input type="submit" value="LOGAR" class="bt_cad">
+                    <input type="submit" value="LOGAR" class="bt_entrar">
                 </div>
 
             </form>
+            <div class="voltaprincipal">
+                <a href="betour.php" class="form_link">&larr;VOLTAR PARA PAGINA PRINCIPAL</a>
+                <p class="p_form2">Não Possui cadastro? Então click no link abaixo para login</p>
+                <a href="cadastrar.php" class="form_link2">Cadastro</a>
+            </div>
 
 
             <footer style="position: relative;
@@ -36,7 +41,7 @@
                             float: left;
                             background-color: #0B2B40;
                             color: white;
-                            margin-top: 275px;">
+                            margin-top: 366px;">
                 <?php
                 include "rodape.php";
                 ?>

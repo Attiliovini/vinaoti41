@@ -9,7 +9,7 @@ $senha = $_POST['senha'];
  include_once("conexao.php");
 
  //Select de pesquisa do usuário
- $sql = "SELECT `nome`, `cpf`, `senha`, `datadenascimento` FROM `cadastros` WHERE  `CPF` = '".$CPF."' AND `senha` = '".$senha."'";
+ $sql = "SELECT `id`, `nome`, `cpf`, `senha`, `datadenascimento` FROM `cadastros` WHERE  `CPF` = '".$CPF."' AND `senha` = '".$senha."'";
 
  //Executando a select
  $resultado = mysqli_query($link,$sql);

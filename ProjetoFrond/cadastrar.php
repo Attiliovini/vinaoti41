@@ -25,17 +25,22 @@
                 <p>Nome:<input type="text" name="nome" class="campos_cad" placeholder="NOME"></p>
                 <p>CPF:<input type="text" name="cpf" class="campos_cad" placeholder="CPF"></p>
                 <p>Senha:<input type="password" name="senha" class="campos_cad" placeholder="SENHA"></p>
-                <p>Data de Nascimento:<input type="text" name="datadenascimento" class="campos_cad"placeholder="DATA DE NASCIMENTO"></p>
-                        
+                <p>Data de Nascimento:<input type="text" name="datadenascimento" class="campos_cad"
+                        placeholder="DATA DE NASCIMENTO"></p>
+
                 <!-- formatação dos botoes -->
                 <div id="botoes">
                     <!-- Trazer o botão atualizar qdo o id for maior que 0-->
-                    <input type="submit" value="Concluir" class="bt_cad">
+                    <input type="submit" value="Concluir" class="bt_entra">
                 </div>
 
         </div>
+        <div class="botoes">
+            <p class="p_form">Já Possui cadastro? Então click no link abaixo para login</p>
+            <a href="entrar.php" class="form_link">LOGAR</a>
+        </div>
     </div>
-    
+
 
     <footer class="remocao_margin">
         <?php

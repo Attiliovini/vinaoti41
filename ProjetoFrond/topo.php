@@ -1,39 +1,32 @@
-<a href="/vinaoti41/ProjetoFrond/entrar.php">Entrar</a>
-<a href="/vinaoti41/ProjetoFrond/cadastrar.php">Cadastre-se</a>
-</div>
-<div class="fundocinza">
+<div class="topo">
     <img class="logo" src="imagens/logo.png">
+    <?php
+    session_start();
+    if (isset($_SESSION['nome'])) {
+        echo "<div style='color:white;font-size: 20px;text-transform: uppercase;'>Seja bem vindo, " . $_SESSION['nome'] . "</div>";
+        //echo '<a href="acao_logoff.php" class="link_top"> LOGOFF </a>';
+        // echo '<a href="cadastros.php" class="link_top"> USUÁRIOS </a>';       
+        /*Alterado em 11/11/2024*/
+    }
+    ?>
 
-    <div class="icon-container">
-        <div class="icon">
-            <a href="betour.php"><img class="logo2" src="imagens/home.png"></a>
-            <div>
-                <a href="betour.php">INICIO</a>
-            </div>
-        </div>
-        <div class="icon">
-            <a href="empresa.php"><img class="logo2" src="imagens/empresa.png"></a>
-            <div>
-                <a href="empresa.php">EMPRESA</a>
-            </div>
-        </div>
-        <div class="icon">
-            <a href="pacotes.php"><img class="logo2" src="imagens/viagem.png"></a>
-            <div>
-                <a>PACOTES</a>
-            </div>
-        </div>
-        <div class="icon">
-            <a href="#"><img class="logo2" src="imagens/ilha.png"></a>
-            <div>
-                <a>BATE E VOLTA</a>
-            </div>
-        </div>
-        <div class="icon">
-            <a href="contato.php"><img class="logo2" src="imagens/contato.png"></a>
-            <div>
-                <a>CONTATO</a>
-            </div>
-        </div>
-
+    <div class="menu">
+        <ul class="link_menu">
+            <li><a href="betour.php">INICIO</a></li>
+            <li><a href="empresa.php">QUEM SOMOS</a></li>
+            <li><a href="pacotes.php">VIAGENS</a></li>
+            <li><a href="contato.php">CONTATO</a></li>
+        </ul>
     </div>
+    <div class="entrar-cadastro">
+        <a href="/vinaoti41/ProjetoFrond/entrar.php" class="botao-entrar">
+            <img class="iconentrar" src="imagens/entrar.png" alt="Ícone de entrar">
+            Iniciar Sessão
+        </a>
+    </div>
+</div>
+
+
+
+
+<!-- <a href="/vinaoti41/ProjetoFrond/cadastrar.php">Cadastre-se</a> -->

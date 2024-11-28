@@ -5,25 +5,148 @@ body {
   /* Ajuste para responsividade */
 }
 
-.entrar-cadastro {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #0B2B40;
-  color: white;
-  padding: 10px;
-
-}
-
-.entrar-cadastro a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 
 }
+/* Topo */
+
+/* Estiliza o topo */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0B2B40;  /* Cor de fundo */
+  padding: 10px 20px;
+  width: 100%;  /* Largura 100% */
+}
+
+/* Estiliza a logo */
+.logo {
+  height: 70px;  /* Logo um pouco maior */
+  margin-left: 18px;
+}
+
+/* Estiliza o menu */
+.menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.link_menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.link_menu li {
+  margin: 0 20px;
+  position: relative; /* Necessário para o efeito de sublinhado */
+}
+
+.link_menu a {
+  text-decoration: none;
+  color: #fff;  /* Fonte branca por padrão */
+  font-size: 16px;
+  font-weight: bold;
+  position: relative; /* Para garantir que o sublinhado será posicionado corretamente */
+  display: inline-block; /* Para o link se comportar como um bloco e permitir o sublinhado */
+  transition: color 0.3s ease;  /* Suaviza a transição de cor */
+}
+
+/* Efeito de sublinhado que aparece ao passar o mouse */
+.link_menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;  /* Tamanho mais fino do tracinho */
+  bottom: -4px;  /* Coloca o tracinho um pouco mais para baixo */
+  left: 0;
+  background-color: #f4a261;  /* Cor do tracinho */
+  transition: width 0.3s ease;  /* Suaviza a animação do tracinho */
+}
+
+.link_menu a:hover::after {
+  width: 100%;  /* Faz com que o tracinho ocupe toda a largura do item */
+}
+
+/* Cor do texto ao passar o mouse */
+.link_menu a:hover {
+  color: #f4a261;
+}
+
+/* Estiliza a seção de contato */
+.contato {
+  display: flex;
+  align-items: center;
+  color: #fff;  /* Fonte branca */
+  font-size: 14px;
+}
+
+.contato img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Estiliza a seção de entrar/cadastro - botão laranja */
+.entrar-cadastro {
+
+}
+
+.iconentrar {
+  width: 20px;  /* Tamanho do ícone */
+  height: 20px;
+  margin-right: 10px;  /* Espaço entre o ícone e o texto */
+}
+
+/* Estiliza o botão laranja de "Iniciar Sessão" */
+.botao-entrar {
+  text-decoration: none;
+  color: #0B2B40;  /* Texto branco */
+  background-color: #f4a261;  /* Fundo laranja */
+  padding: 10px 20px;  /* Adiciona um pouco de espaço dentro do botão */
+  border-radius: 5px;  /* Bordas arredondadas */
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;  /* Alinha ícone e texto verticalmente */
+  transition: transform 0.3s ease;  /* Transição suave para aumento de tamanho */
+  margin-right: 200px;
+}
+
+.botao-entrar:hover {
+  transform: scale(1.1);  /* Aumenta o tamanho do botão em 10% */
+}
+
+/* Resposta para mobile - organiza as seções em uma coluna */
+@media (max-width: 768px) {
+  .topo {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu {
+      margin-top: 10px;
+  }
+
+  .link_menu {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .link_menu li {
+      margin: 5px 0;
+  }
+
+  .contato,
+  .entrar-cadastro {
+      margin-top: 10px;
+  }
+}
+
 
 /* Slideshow container */
 .imagem-container {
@@ -49,7 +172,7 @@ body {
   background: url(imagens/busao.png);
   height: 300px;
   background-size: cover;
-  
+ 
 }
 .promo
 {
@@ -103,8 +226,6 @@ body {
   /* Espaçamento interno */
 }
 
-
-
 .fundocinza {
   background-color: #E2E1E1;
   /* Cor cinza */
@@ -113,12 +234,6 @@ body {
   height: auto;
   /* Ajuste para responsividade */
   display: flex;
-}
-
-.logo {
-  width: 105px;
-  margin-left: 54px;
-  height: auto;
 }
 
 .logo1 {
@@ -203,11 +318,16 @@ body {
   transform: translateX(-50%);
   padding: 45px;
 }
-.viagens{
+.viagens {
   height: 134px;
-  display: flex;
-  justify-content: space-evenly;
+  display: block; /* Make the image block-level to apply hover effects */
   border-radius: 6%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+ 
+.viagens:hover {
+  transform: scale(1.1); /* Enlarge on hover */
 }
 footer{
 position: relative;
@@ -216,7 +336,7 @@ height: 156px;
 float: left;
 background-color:#0B2B40;
 color: white;
-margin-top: 28px;
+margin-top: 121px;
 
 }
 
@@ -261,32 +381,60 @@ margin-top: 28px;
   margin-left: 300px;
 }
 
-.bt_cad{
+.bt_entra{
   float: left;
   font-size: 16px;
   padding: 5px;
   background-color: #E0902E;
   margin-left: 332px;
-  margin-top: 15px;
+  margin-top: -5px; 
+  border-radius: 5px;
+  border: 2px solid #000000;
 }
 
 .form_link{
-  color: #59f;
-  font-size: 16px;
   float: left;
-  
-}
+  font-size: 16px;
+  padding: 5px;
+  background-color: #E0902E;
+  margin-left: 1332px;
+  margin-top: -5px; 
+  border: 2px solid #000000; /* Borda verde */
+  border-radius: 5px;        /* Bordas arredondadas */
+  cursor: pointer;          /* Cursor em forma de mãozinha */
+  transition: all 0.3s ease;
+  }
+  .form_link2{
+    float: left;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #E0902E;
+    margin-left: 1332px;
+    margin-top: -5px; 
+    border: 2px solid #000000; /* Borda verde */
+    border-radius: 5px;        /* Bordas arredondadas */
+    cursor: pointer;          /* Cursor em forma de mãozinha */
+    transition: all 0.3s ease;
+    }
 .p_form{
   color: #333;
   font-size: 20px;
-  float: left;
+  margin-left: 913px;
   width: 100%;
-  
+ 
+}
+.p_form2{
+  color: #333;
+  font-size: 20px;
+  margin-left: 1067px;
+  width: 100%;
+  float: left;
+ 
 }
 form{
   padding-left: 150px;
   margin-left: 462px;
-  margin-top: 66px;
+  margin-top: 45px;
 }
 .pacotes{
   font-size: 15px;
@@ -327,7 +475,6 @@ font-size: 15px;
   }
   .logoentrar{
     margin-left: 912px;
-    margin-top: 35px;
   }
 
   .remocao_margin {
@@ -361,10 +508,10 @@ font-size: 15px;
     text-align: left; /* Texto alinhado à esquerda */
 }
 
-/* Estilo dos títulos e parágrafos dentro da seção*/ 
+/* Estilo dos títulos e parágrafos dentro da seção*/
 .backgroud h1, .backgroud h2, .backgroud p {
     margin: 10px 0; /* Espaçamento entre os elementos */
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
     font-size: 20px;
 }
 
@@ -431,4 +578,23 @@ font-size: 15px;
   margin-left: 45px;
   margin-top: 28px;
   margin-bottom: 28px;
+}
+
+
+.botao-entrar {
+  margin-right: 0;
+}
+.voltaprincipal{
+  margin-left: -320px;
+}
+.bt_entrar{
+  font-size: 16px;
+  padding: 5px;
+  background-color: #E0902E;
+  /* margin-left: 1332px; */
+  margin-top: -5px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
