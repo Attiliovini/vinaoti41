@@ -76,6 +76,23 @@ body {
 .link_menu a:hover {
   color: #f4a261;
 }
+.link_top{
+    text-decoration: none;
+    color: #0B2B40;
+    background-color: #f4a261;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin-left: 100px;
+    cursor: pointer;  
+}
+.link_top:hover{
+  transform: scale(1.1); /* Enlarge on hover */
+}
 
 /* Estiliza a seção de contato */
 .contato {
@@ -330,7 +347,6 @@ body {
   transform: scale(1.1); /* Enlarge on hover */
 }
 footer{
-position: relative;
 width: 100%;
 height: 156px;
 float: left;
@@ -378,8 +394,15 @@ margin-top: 121px;
  /* margin-left: 300px; */
 }
 .box_form{
-  margin-left: 300px;
+  /* margin-left: 300px; */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  margin-top: 134px;
 }
+/* .box_form1{ 
+  margin-left: 10px;
+}*/
 
 .bt_entra{
   float: left;
@@ -393,24 +416,24 @@ margin-top: 121px;
 }
 
 .form_link{
-  float: left;
+  /* float: left; */
   font-size: 16px;
   padding: 5px;
   background-color: #E0902E;
-  margin-left: 1332px;
-  margin-top: -5px; 
+  /* margin-left: 1332px; */
+  /* margin-top: -5px;  */
   border: 2px solid #000000; /* Borda verde */
   border-radius: 5px;        /* Bordas arredondadas */
   cursor: pointer;          /* Cursor em forma de mãozinha */
   transition: all 0.3s ease;
   }
   .form_link2{
-    float: left;
+    /* float: left; */
     font-size: 16px;
     padding: 5px;
     background-color: #E0902E;
-    margin-left: 1332px;
-    margin-top: -5px; 
+     margin-left: 432px; 
+    /* margin-top: -5px;  */
     border: 2px solid #000000; /* Borda verde */
     border-radius: 5px;        /* Bordas arredondadas */
     cursor: pointer;          /* Cursor em forma de mãozinha */
@@ -426,15 +449,18 @@ margin-top: 121px;
 .p_form2{
   color: #333;
   font-size: 20px;
-  margin-left: 1067px;
+  /* margin-left: 1067px; */
   width: 100%;
-  float: left;
+  /* float: left; */
  
 }
 form{
-  padding-left: 150px;
+  /* padding-left: 150px;
   margin-left: 462px;
-  margin-top: 45px;
+  margin-top: 45px; */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 920px;
 }
 .pacotes{
   font-size: 15px;
@@ -446,8 +472,9 @@ form{
   background-color: #E2E1E1;
   width: 1903px;
   height: 525px;
-
+  margin-top: 115px;
 }
+
 .pacotes h2{
 font-size: 20px;
 }
@@ -471,7 +498,7 @@ font-size: 15px;
 }
 .cinzaentrar{
   background-color: #E2E1E1;
-  height: 736px;
+  height: 698px;
   }
   .logoentrar{
     margin-left: 912px;
@@ -585,16 +612,23 @@ font-size: 15px;
   margin-right: 0;
 }
 .voltaprincipal{
-  margin-left: -320px;
+  /* margin-left: -320px; */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 920px;
+
 }
 .bt_entrar{
   font-size: 16px;
   padding: 5px;
   background-color: #E0902E;
-  /* margin-left: 1332px; */
+   margin-left: 433px; 
   margin-top: -5px;
   border: 2px solid #000000;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.direita{
+  margin-left: 100px;
 }
