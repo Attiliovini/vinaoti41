@@ -11,7 +11,7 @@
     ?>
     <div class="menu">
         <ul class="link_menu">
-            <li><a href="betour.php">INICIO</a></li>
+            <li><a href="index.php">INICIO</a></li>
             <li><a href="empresa.php">QUEM SOMOS</a></li>
             <li><a href="pacotes.php">VIAGENS</a></li>
             <li><a href="contato.php">CONTATO</a></li>

@@ -16,7 +16,7 @@
     </div>
     <!-- Página de Contato -->
     <div class="contatocinza">
-        <h1 class="ajustecontato">Contatos</h1>
+        <div class="ajustecontato">Contatos</div>
         <div>
             <img class="logocontato" src="imagens/contato.png">
             <form method="post">

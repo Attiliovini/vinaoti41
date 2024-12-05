@@ -32,7 +32,7 @@ $senha = $_POST['senha'];
     ?>
     <script>
     alert("usuário conectado com sucesso!");
-    window.location.replace("betour.php");  
+    window.location.replace("index.php");  
     </script>
 <?php
  } else {
