@@ -30,14 +30,13 @@
 
                 <!-- formatação dos botoes -->
                 <div id="botoes">
-                    <!-- Trazer o botão atualizar qdo o id for maior que 0-->
+                    <a href="entrar.php" class="form_link1">Logar</a>
                     <input type="submit" value="Concluir" class="bt_entra">
                 </div>
 
         </div>
         <div class="botoes">
-            <p class="p_form">Já Possui cadastro? Então click no link abaixo para login</p>
-            <a href="entrar.php" class="form_link">LOGAR</a>
+            <p class="p_form3">Já Possui cadastro? Então clica no botão Logar acima para login</p>
         </div>
     </div>
 

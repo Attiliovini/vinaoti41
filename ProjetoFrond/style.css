@@ -425,7 +425,7 @@ footer p {
   font-family: calibri, sans-serif;
   float: left;
   width: 96%;
-  margin: -44px 2%;
+  margin: -55px 2%;
   text-align: center;
   height: 135px;
 }
@@ -460,7 +460,7 @@ footer p {
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
-  margin-top: 134px;
+  margin-top: 85px;
 }
 
 
@@ -470,7 +470,7 @@ footer p {
   padding: 5px;
   background-color: #E0902E;
   margin-left: 332px;
-  margin-top: -5px;
+  margin-top: -27px;
   border-radius: 5px;
   border: 2px solid #000000;
 }
@@ -523,10 +523,9 @@ footer p {
   font-size: 20px;
   width: 100%;
   text-align: center;
+  
 }
-.p_form2 p {
-  margin-left: 100px;
-}
+
 
 form {
   margin: 0 auto;
@@ -582,6 +581,7 @@ form {
 
 .logoentrar {
   margin-left: 912px;
+  margin-top: 55px;
 }
 
 /* .remocao_margin {
@@ -728,4 +728,29 @@ form {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+
+.form_link1{
+  font-size: 16px;
+  padding: 5px;
+  background-color: #E0902E;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 596px;
+  width: 332px;
+  margin-top: -31px;
+  color: black;
+  margin-left: 210px;
+  
+}
+.p_form3{
+  margin-right: -99px;
+  margin-left: 634px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 703px;
 }
