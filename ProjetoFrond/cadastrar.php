@@ -22,22 +22,21 @@
             <h1 class="titulos" style="font-size: 40px">Cadastra-Se</h1>
             <form action="cadastrarAction.php" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="id">
-                <p>Nome:<input type="text" name="nome" class="campos_cad" placeholder="NOME"></p>
-                <p>CPF:<input type="text" name="cpf" class="campos_cad" placeholder="CPF"></p>
-                <p>Senha:<input type="password" name="senha" class="campos_cad" placeholder="SENHA"></p>
-                <p>Data de Nascimento:<input type="text" name="datadenascimento" class="campos_cad"
-                        placeholder="DATA DE NASCIMENTO"></p>
+                <p>Nome:<input type="text" required name="nome" class="botaoform" placeholder="NOME"></p>
+                <p>CPF:<input type="text" required name="cpf" class="botaoform" placeholder="CPF"></p>
+                <p>Senha:<input type="password" required name="senha" class="botaoform" placeholder="SENHA"></p>
+                <p>Data de Nascimento:<input type="text" required name="datadenascimento" class="botaoform"placeholder="DATA DE NASCIMENTO"></p>
 
                 <!-- formatação dos botoes -->
                 <div id="botoes">
-                    <a href="entrar.php" class="form_link1">Logar</a>
                     <input type="submit" value="Concluir" class="bt_entra">
+                    <BR>
+                    <BR>
+                    <p class="p_form3">Já Possui cadastro? <a href="entrar.php" class="form_link1">Logar</a> </p>
                 </div>
 
         </div>
-        <div class="botoes">
-            <p class="p_form3">Já Possui cadastro? Então clica no botão Logar acima para login</p>
-        </div>
+    
     </div>
 
 

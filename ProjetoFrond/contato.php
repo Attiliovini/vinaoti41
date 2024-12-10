@@ -17,32 +17,30 @@
     <!-- Página de Contato -->
     <div class="contatocinza">
         <div class="ajustecontato">Contatos</div>
-        <div>
-            <img class="logocontato" src="imagens/contato.png">
-            <form method="post">
-                <label class="legenda">NOME :</label><br>
-                <input type="text" name="nome" class="campos" placeholder="Preencha este campo com seu nome" required><br>
-                
-                <label class="legenda">EMAIL :</label><br>
-                <input type="email" name="email" class="campos" placeholder="Digite seu emali aqui" required><br>
-                
-                <label class="legenda">ASSUNTO :</label><br>
-                <input type="text" name="assunto" class="campos" placeholder="Sobre o que você deseja falar ?" required><br>
-                
-                <label class="legenda">CONTEUDO :</label><br>
-                <textarea name="conteudo" class="campo2" placeholder="Digite no maximo 140 caracteres o conteudo"
-                maxlength="140" required></textarea><br>
-                
-                <input type="submit" value="ENVIAR" class="bt_enviar">
-            </form>
-        </div>
+        <img class="logocontato" src="imagens/contato.png">
+        <form method="post">
+            <label class="legenda">NOME :</label><br>
+            <input type="text" name="nome" class="campos" placeholder="Preencha este campo com seu nome" required><br>
+
+            <label class="legenda">EMAIL :</label><br>
+            <input type="email" name="email" class="campos" placeholder="Digite seu emali aqui" required><br>
+
+            <label class="legenda">ASSUNTO :</label><br>
+            <input type="text" name="assunto" class="campos" placeholder="Sobre o que você deseja falar ?" required><br>
+
+            <label class="legenda">CONTEUDO :</label><br>
+            <textarea name="conteudo" class="campos" placeholder="Digite no maximo 200 caracteres o conteudo"
+                maxlength="200" required></textarea><br>
+
+            <input type="submit" value="ENVIAR" class="bt_enviar">
+        </form>
     </div>
 
     <footer class="remocao_margin">
-            <?php
-                include "rodape.php";
-            ?>
-        </footer>
+        <?php
+        include "rodape.php";
+        ?>
+    </footer>
 </body>
 
 </html>

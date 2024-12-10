@@ -14,7 +14,7 @@ include "conexao.php";
     
     $resultado = mysqli_query($link,$sql);
     echo ('<script> alert("Cadastro Inserido com sucesso!!!");</script>');
-    echo '<META HTTP-EQUIV=REFRESH CONTENT="1; http://localhost/vinaoti41/ProjetoFrond/entrar.php">';
+    echo '<META HTTP-EQUIV=REFRESH CONTENT="1;  /vinaoti41/ProjetoFrond/entrar.php">';
     
     
     ?>
